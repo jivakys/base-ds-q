@@ -18,3 +18,4 @@ function dail(arr, n) {
   console.log(ans.reverse().join(" "));
 }
 dail(array, n);
+// 1 1 4 2 1 1 0 0
