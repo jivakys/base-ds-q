@@ -20,6 +20,13 @@ function pop() {
   return ans;
 }
 
+function peek() {
+  if (top == -1) {
+    ("Empty Stack");
+  }
+  return arr[top];
+}
+
 push(45);
 push(2);
 push(52);
