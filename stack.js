@@ -11,6 +11,15 @@ function push(data) {
   arr[top] = data;
 }
 
+function pop() {
+  if (top == -1) {
+    console.log("Empty Stack");
+  }
+  let ans = arr[top];
+  top--;
+  return ans;
+}
+
 push(45);
 push(2);
 push(52);
