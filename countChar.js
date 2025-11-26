@@ -5,6 +5,7 @@ function countStringCharecters(str) {
   let letterCount = str.reduce((acc, char) => {
     if (char != " ") {
       acc[char] = acc[char] ? acc[char] + 1 : 1;
+      //   acc[char] = (acc[char] || 0) + 1;
     }
     return acc;
   }, {});
