@@ -19,3 +19,22 @@
 //   }
 //   return false;
 // }
+
+//### solution - 3
+function findSum(arr, k) {
+  const obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const baki = k - arr[i];
+    if (obj[baki]) {
+      return true;
+    } else {
+      obj[arr[i]] = true;
+    }
+  }
+  return false;
+}
+
+let arr = [10, 15, 3, 7];
+let k = 17;
+console.log(findSum(arr, k));
