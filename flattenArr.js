@@ -7,3 +7,5 @@ const multiDimensionalArray = [
 const flattenedArray = multiDimensionalArray.reduce((acc, currval) => {
   return acc.concat(currval);
 }, []);
+
+console.log(flattenedArray);
