@@ -3,3 +3,7 @@ const multiDimensionalArray = [
   [4, 5],
   [6, 7, 8],
 ];
+
+const flattenedArray = multiDimensionalArray.reduce((acc, currval) => {
+  return acc.concat(currval);
+}, []);
