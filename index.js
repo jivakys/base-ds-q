@@ -1,14 +1,17 @@
-const promise1 = Promise.resolve("First");
-const promise2 = Promise.resolve("Second");
-const promise3 = Promise.reject("Third");
-const promise4 = Promise.resolve("Fourth");
+function alooPakoda() {
+  console.log("le lo");
+}
+process.nextTick(() => {
+  console.log("process next tick");
+});
+console.log("check 1");
+alooPakoda();
 
-const runPromises = async () => {
-  const res1 = await Promise.all([promise1, promise2]);
-  const res2 = await Promise.all([promise3, promise4]);
-  return [res1, res2];
-};
+setTimeout(() => {
+  console.log("Time out ");
+}, 0);
 
-runPromises()
-  .then((res) => console.log(res))
-  .catch((err) => console.log(err));
+setImmediate(() => {
+  console.log("setImmediate");
+}, 1000);
+console.log("check 2");
