@@ -28,6 +28,5 @@ function isBalanced(s) {
   return st.length === 0;
 }
 
-//Driven Code
 let s = "[()()]{}";
 console.log(isBalanced(s) ? "true" : "false");
