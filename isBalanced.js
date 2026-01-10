@@ -45,5 +45,6 @@ function isBalanced(s) {
   return stack.length == 0;
 }
 
-let s = "[()()]{}}{";
-console.log(isBalanced(s) ? "true" : "false");
+let s = "[()()]{}";
+let st = "[()()]{(})";
+console.log(isBalanced(st) ? "true" : "false");
