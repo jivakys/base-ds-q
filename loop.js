@@ -4,8 +4,8 @@ function alooPakoda() {
 process.nextTick(() => {
   console.log("process next tick");
 });
-console.log("check 1");
 alooPakoda();
+console.log("check 1");
 
 setTimeout(() => {
   console.log("Time out ");
