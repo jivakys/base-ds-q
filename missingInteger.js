@@ -9,7 +9,7 @@ let n = arr.length + 1;
 console.log(missingIntegers(arr, n));
 
 // FIND MULTIPLE MISSING ELEMENT IN ARR
-function multipleMissElement(arr, n) {
+function multipleMissElement(arr, m) {
   let set = new Set(arr);
   let missing = [];
   for (let i = 1; i <= m; i++) {
