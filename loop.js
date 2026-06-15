@@ -1,4 +1,5 @@
 function alooPakoda() {
+  setTimeout(() => console.log("timeout in function"), 0);
   console.log("le lo");
 }
 process.nextTick(() => {
